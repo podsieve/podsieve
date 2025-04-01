@@ -17,12 +17,12 @@ const LandingPage: React.FC = () => {
           <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">Discover public markets and economic insights from podcasts</h1>
           <p className="text-base sm:text-lg text-gray-600 mb-4">Public market insights and sentiments derived from podcasts from influential investors and experts</p>
           <div className="flex justify-center mb-8">
-            <a 
-              href="/podcasts" 
+            <Link
+              to="/podcasts" 
               className="px-6 py-2.5 bg-gray-900 text-white font-medium rounded-xl hover:bg-gray-800 transition-colors"
             >
               Explore All Podcasts
-            </a>
+            </Link>
           </div>
           
           <div className="w-full h-[1px] border-0 border-b border-dashed border-gray-200 mb-8" />
