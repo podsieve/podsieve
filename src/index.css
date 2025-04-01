@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter Tight', sans-serif;
+}
+
+.tile {
+  @apply bg-white rounded-lg shadow-md p-6 transition-all duration-300 hover:shadow-lg;
+}
+
+.tile-large {
+  @apply col-span-2 row-span-2;
+}
+
+.tile-medium {
+  @apply col-span-1 row-span-2;
+}
+
+.tile-small {
+  @apply col-span-1 row-span-1;
+}
+
+.table-section {
+  @apply bg-white rounded-lg shadow-md p-6;
+}
+
+.table-row {
+  @apply border-b border-gray-200 py-3 flex justify-between items-center;
+}
+
+.table-row:last-child {
+  @apply border-b-0;
+}
+
+/* Add styles for table container */
+.overflow-x-auto {
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+/* Make the header sticky */
+thead.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: white;
+}
+
+/* Add custom scrollbar styling */
+.overflow-x-auto::-webkit-scrollbar {
+  width: 8px;
+}
+
+.overflow-x-auto::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.overflow-x-auto::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.overflow-x-auto::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
